@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Project</title>
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+</head>
+
+<style>
+  .card-img-overlay {
+    background-color: rgb(0, 0, 0, 0.2);
+  }
+
+
+  .card-text {
+    margin-top: 20px;
+  }
+</style>
+
+<body>
+  <!-- criando um carousel -->
+  <div class="container">
+    <div id="carousel-exemplo" class="carousel carousel-fade slide " data-bs-ride="carousel">
+      <div class="carousel-inner ">
+        <div data-bs-interval="2000" class="carousel-item active">
+          <img class="d-block w-100" src="./images/fox-1883658_1280 (1).jpg">
+          <div class="carousel-caption">
+            <h2>Photo of a cat</h2>
+          </div>
+        </div>
+        <div data-bs-interval="2000" class="carousel-item">
+          <img class="d-block w-100" src="./images/animal-3099035_1280.jpg">
+          <div class="carousel-caption">
+            <h2>Photos of the horses </h2>
+          </div>
+        </div>
+        <div data-bs-interval="2000" class="carousel-item">
+          <img class="d-block w-100" src="./images/tiger-2535888_1280.jpg">
+          <div class="carousel-caption">
+            <h2>Photo of a tiger</h2>
+          </div>
+        </div>
+      </div>
+      <!-- botao para voltar no slide , class="carousel-control-prev" -->
+      <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev " type="button">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <!-- botao abaixo de avancar -->
+      <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+      <!-- a primeira imagem estara na posicao zero -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+      </div>
+    </div>
+  </div>
+
+  <h1>Cards - Projeto</h1>
+  <div class="container">
+    <div class="row">
+      <!-- coluna number 1 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card text-bg-dark">
+          <img src="https://cdn.pixabay.com/photo/2019/07/07/14/03/fiat-500-4322521_1280.jpg">
+          <div class="card-img-overlay">
+            <h4 class="card-title">VW Beetle </h4>
+            <h5 class="card-subtitle">Red VW Beetle</h5>
+            <p class="card-text">
+              Her heart races with joy whenever she spots a classic VW Beetle.
+            </p>
+            <a href="#" class="btn btn-primary">Click here to see more</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- quando quiser adicionar uma foto depois, https://via.placeholder.com/100x100 -->
+      <!-- o col-lg-4, col-md-6, col-12, deixa o layout responsivo para uma visao desktop, tablet e smartphone -->
+      <div class="col-lg-4 col-md-6 col-12 ">
+        <div class="card text-bg-dark">
+          <img src="https://cdn.pixabay.com/photo/2016/11/21/17/44/arches-national-park-1846759_1280.jpg">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Passport to Paradise</h4>
+            <h5 class="card-subtitle">Cuisine and Culture</h5>
+            <p class="card-text">
+              Traveling is the art of collecting moments and memories from around the world.
+            </p>
+            <a href="#" class="btn btn-primary">Click here to see more</a>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="card text-bg-dark">
+          <img src="https://cdn.pixabay.com/photo/2013/07/13/12/40/boy-160105_1280.png">
+          <div class="card-img-overlay">
+            <h4 class="card-title">Titulo do Card</h4>
+            <h5 class="card-subtitle">Subtitulo do Card</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit quisquam dolor aspernatur rerum id blanditiis optio, veritatis ipsam veniam. Assumenda unde cum nemo dolorem minus nobis suscipit doloremque excepturi!
+            </p>
+            <a href="#" class="btn btn-primary">Click here to see more</a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
